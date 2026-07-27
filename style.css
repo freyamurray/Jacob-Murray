@@ -76,7 +76,8 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   background-color: var(--bg);
   z-index: 10;
@@ -187,7 +188,8 @@ button {
   position: fixed;
   width: 100%;
   inset: auto;
-  top: anchor(header);
+  top: 0;
+  margin-top: 8.5rem;
   box-sizing: border-box;
   border-top: solid 1px;
   border-bottom: dotted 2px;
@@ -417,6 +419,7 @@ textarea {
 
   #hb-menu {
     display: block;
+    font-size: 1.8rem;
     /* position: absolute; */
     /* right: 0; */
   }
