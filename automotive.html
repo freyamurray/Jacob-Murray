@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Murray | Automotive Photography</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/7ce2089e78.js" crossorigin="anonymous"></script>
+    <link type="image/png" sizes="16x16" rel="icon" href="icons/icons8-slr-camera-16.png">
+    
+</head>
+
+<body>
+
+    <!-- banner -->
+    <header>
+        <div class="name">
+            <a href="index.html">
+                <h1>Jacob Murray</h1>
+                <p class="tagline">photography</p>
+            </a>
+        </div>
+
+        <!-- desktop navigation bar -->
+        <nav id="desktop-nav">
+            <a href="index.html#about">
+                About
+            </a> |
+            <div>
+                <button type="button" popovertarget="portfolio-dropdown" id="portfolio">
+                    Portfolio
+                </button>
+                <div role="menu-item" popover id="portfolio-dropdown">
+                    <a href="automotive.html">
+                        Automotive
+                    </a>
+                    <br>
+                    <a href="traveltourism.html">
+                        Travel
+                    </a>
+                    <br>
+                    <a href="commercial.html">
+                        Commercial
+                    </a>
+                    <br>
+                    <a href="weddings.html">
+                        Weddings
+                    </a>
+                </div>
+            </div> |
+            <a href="contact.html">
+                Contact
+            </a> |
+            <!-- banner dark mode -->
+            <button type="button" class="themeswitch" id="desktop-themeswitch" onclick="themeSwitch()">
+                <i class='fa-solid fa-moon' title="dark mode"></i>
+            </button>
+        </nav>
+
+        <!-- hamburger menu -->
+        <button type="button" id="hb-menu" onclick="mobileMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- mobile themeswitch button -->
+    <button type="button" class="themeSwitch" id="mobile-themeswitch" onclick="themeSwitch()">
+        <i class='fa-solid fa-moon' title="dark mode"></i>
+    </button>
+
+    <!-- mobile menu -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-content">
+
+
+            <a href="#about">
+                About
+            </a>
+            <div>
+                <button id="portfolio-mobile" onclick="dropdown()">
+                    Portfolio
+                </button>
+                <div class="dropdown" id="portfolio-dropdown-mobile">
+                    <a href="automotive.html">
+                        Automotive
+                    </a>
+                    <br>
+                    <a href="traveltourism.html">
+                        Travel
+                    </a>
+                    <br>
+                    <a href="commercial.html">
+                        Commercial
+                    </a>
+                    <br>
+                    <a href="weddings.html">
+                        Weddings
+                    </a>
+                </div>
+            </div>
+            <a href="contact.html">
+                Contact
+            </a>
+        </div>
+    </div>
+    <!-- main content -->
+    <main>
+        <!-- blurb -->
+        <section class="blurb" id="automotive-blurb">
+            <h1>Automotive Photography</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam delectus eveniet incidunt vero inventore nisi odit maiores, officia cumque eaque! Aliquid aut sapiente voluptatum sequi tempore? Quia, eaque adipisci?</p>
+        </section>
+
+        <section class="images" id="automotive-images">
+            <img src="images/Automotive small//595913390006-Edit.jpg" alt="A teal Porsche againt a back drop of Edinburgh">
+            <img src="images/Automotive small/DJI_0142.jpg" alt="Aerial shot of five Bentleys parked in a semicircle outside a stately home">
+            <img src="images/Automotive small/DSC00533.jpg" alt="Three Lambourghinis on a racing track">
+            <img src="images/Automotive small/DSC02089-Edit.jpg" alt="Aerial shot of an orange Porsche">
+            <img src="images/Automotive small/DSC02140.jpg" alt="Black and white photo of a Bentley driving along a beach">
+            <img src="images/Automotive small/DSC03811.jpg" alt="A green and an orange Lambourghini">
+            <img src="images/Automotive small/DSC04173-3.jpg" alt="The rear headlights of a Porsche">
+            <img src="images/Automotive small/DSC04888.jpg" alt="An orange car sitting in a picturesque lane in Edinburgh">
+            <img src="images/Automotive small/DSC04941.jpg" alt="The back of a Porsche driving through a foggy landscape at dusk">
+            <img src="images/Automotive small/DSC04194.jpg" alt="The rear headlights of a Porsche">
+            <img src="images/Automotive small/DSC05070.jpg" alt="A Porsche in the rain with a snowy mountain in the background at dusk">
+            <img src="images/Automotive small/DSC05110-2.jpg" alt="A woman with a horse stands next to a Bentley with a horse box attached to the back. They are on a beach">
+            <img src="images/Automotive small/DSC05969.jpg" alt="A close up shot of the Ferrari logo">
+            <img src="images/Automotive small/DSC06947-Edit.jpg" alt="A purple sports car sitting in front of the Forth Bridge at night">
+            <img src="images/Automotive small/DSC08393-2.jpg" alt="A man stands facing a white car on a pier overlooking the ocean">
+            <img src="images/Automotive small/DSC08620.jpg" alt="A blue Porsche drives down a race track at great speed">
+            <img src="images/Automotive small/DSC06796-Enhanced-NR.jpg" alt="A close up of the interior of a sports car, focusing on the gear stick">
+            <img src="images/Automotive small/DSC01061-Edit.jpg" alt="A blue Maserati driving with the Scottish Highlands in the background">
+            <img src="images/Automotive small/DSC04165-2.jpg" alt="A black Porsche at sunset with a mountain in the background">
+            <img src="images/Automotive small/DSC02472-2.jpg" alt="The interior console of a Bentley">
+            <img src="images/Automotive small/DSC09997.jpg" alt="A silver Land Rover Defender with a misty sunset background">
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <!-- social icons -->
+        <div class="socials">
+            <a href="https://www.instagram.com/thejacobmurray/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jacob-murray-b3a52626a/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <!-- credit blurb -->
+        <div class="credits">
+            <p>© Jacob Murray 2026. <br>Site by <a href="https://github.com/freyamurray">Freya Murray</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

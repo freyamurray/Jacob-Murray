@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob Murray | Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/7ce2089e78.js" crossorigin="anonymous"></script>
+    <link type="image/png" sizes="16x16" rel="icon" href="icons/icons8-slr-camera-16.png">
+</head>
+
+<body onload="randomImage()">
+    <!-- banner -->
+    <header>
+        <div class="name">
+            <a href="index.html">
+                <h1>Jacob Murray</h1>
+                <p class="tagline">photography</p>
+            </a>
+        </div>
+
+        <!-- desktop navigation bar -->
+        <nav id="desktop-nav">
+            <a href="index.html#about">
+                About
+            </a> |
+            <div>
+                <button type="button" popovertarget="portfolio-dropdown" id="portfolio">
+                    Portfolio
+                </button>
+                <div role="menu-item" popover id="portfolio-dropdown">
+                    <a href="automotive.html">
+                        Automotive
+                    </a>
+                    <br>
+                    <a href="traveltourism.html">
+                        Travel
+                    </a>
+                    <br>
+                    <a href="commercial.html">
+                        Commercial
+                    </a>
+                    <br>
+                    <a href="weddings.html">
+                        Weddings
+                    </a>
+                </div>
+            </div> |
+            <a href="contact.html">
+                Contact
+            </a> |
+            <!-- banner dark mode -->
+            <button type="button" class="themeswitch" id="desktop-themeswitch" onclick="themeSwitch()">
+                <i class='fa-solid fa-moon' title="dark mode"></i>
+            </button>
+        </nav>
+
+        <!-- hamburger menu -->
+        <button type="button" id="hb-menu" onclick="mobileMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- mobile themeswitch button -->
+    <button type="button" class="themeSwitch" id="mobile-themeswitch" onclick="themeSwitch()">
+        <i class='fa-solid fa-moon' title="dark mode"></i>
+    </button>
+
+    <!-- mobile menu -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-content">
+
+
+            <a href="index.html#about">
+                About
+            </a>
+            <div>
+                <button id="portfolio-mobile" onclick="dropdown()">
+                    Portfolio
+                </button>
+                <div class="dropdown" id="portfolio-dropdown-mobile">
+                    <a href="automotive.html">
+                        Automotive
+                    </a>
+                    <br>
+                    <a href="traveltourism.html">
+                        Travel
+                    </a>
+                    <br>
+                    <a href="commercial.html">
+                        Commercial
+                    </a>
+                    <br>
+                    <a href="weddings.html">
+                        Weddings
+                    </a>
+                </div>
+            </div>
+            <a href="contact.html">
+                Contact
+            </a>
+        </div>
+    </div>
+
+    <!-- main page content -->
+    <main>
+        <!-- hero image -->
+        <section class="hero">
+            <div id="hero-image">
+                <form action="send-email.php" method="post">
+                    <div class="input" id="name-input">
+                        <input type="text" name="name" id="name" aria-label="Name" placeholder="Name *" required autocomplete="name">
+                    </div>
+
+                    <div class="input" id="email-input">
+                        <input type="email" name="email" id="email" aria-label="email" placeholder="Email *" required autocomplete="email">
+                    </div>
+
+                    <div class="input" id="phone-input">
+                        <input type="tel" name="number" id="number" aria-label="phone number" placeholder="Phone number" autocomplete="mobile">
+                    </div>
+
+                    <div class="input" id="subject-input">
+                        <input type="text" name="subject" id="subject" aria-label="subject" placeholder="Subject *" required>
+                    </div>
+
+                    <div class="input" id="message-input">
+                        <textarea name="message" id="message" aria-label="message" placeholder="Message *" required></textarea>
+                    </div>
+
+                    <input class="submit-button" role="button" type="submit" value="Send Message">
+
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <!-- social icons -->
+        <div class="socials">
+            <a href="https://www.instagram.com/thejacobmurray/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jacob-murray-b3a52626a/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <!-- credit blurb -->
+        <div class="credits">
+            <p>© Jacob Murray 2026. <br>Site by <a href="https://github.com/freyamurray">Freya Murray</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

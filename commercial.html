@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Murray | Commercial Photography</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/7ce2089e78.js" crossorigin="anonymous"></script>
+    <link type="image/png" sizes="16x16" rel="icon" href="icons/icons8-slr-camera-16.png">
+    
+</head>
+
+<body>
+
+    <!-- banner -->
+    <header>
+        <div class="name">
+            <a href="index.html">
+                <h1>Jacob Murray</h1>
+                <p class="tagline">photography</p>
+            </a>
+        </div>
+
+        <!-- desktop navigation bar -->
+        <nav id="desktop-nav">
+            <a href="index.html#about">
+                About
+            </a> |
+            <div>
+                <button type="button" popovertarget="portfolio-dropdown" id="portfolio">
+                    Portfolio
+                </button>
+                <div role="menu-item" popover id="portfolio-dropdown">
+                    <a href="automotive.html">
+                        Automotive
+                    </a>
+                    <br>
+                    <a href="traveltourism.html">
+                        Travel
+                    </a>
+                    <br>
+                    <a href="commercial.html">
+                        Commercial
+                    </a>
+                    <br>
+                    <a href="weddings.html">
+                        Weddings
+                    </a>
+                </div>
+            </div> |
+            <a href="contact.html">
+                Contact
+            </a> |
+            <!-- banner dark mode -->
+            <button type="button" class="themeswitch" id="desktop-themeswitch" onclick="themeSwitch()">
+                <i class='fa-solid fa-moon' title="dark mode"></i>
+            </button>
+        </nav>
+
+        <!-- hamburger menu -->
+        <button type="button" id="hb-menu" onclick="mobileMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- mobile themeswitch button -->
+    <button type="button" class="themeSwitch" id="mobile-themeswitch" onclick="themeSwitch()">
+        <i class='fa-solid fa-moon' title="dark mode"></i>
+    </button>
+
+    <!-- mobile menu -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-content">
+
+
+            <a href="#about">
+                About
+            </a>
+            <div>
+                <button id="portfolio-mobile" onclick="dropdown()">
+                    Portfolio
+                </button>
+                <div class="dropdown" id="portfolio-dropdown-mobile">
+                    <a href="automotive.html">
+                        Automotive
+                    </a>
+                    <br>
+                    <a href="traveltourism.html">
+                        Travel
+                    </a>
+                    <br>
+                    <a href="commercial.html">
+                        Commercial
+                    </a>
+                    <br>
+                    <a href="weddings.html">
+                        Weddings
+                    </a>
+                </div>
+            </div>
+            <a href="contact.html">
+                Contact
+            </a>
+        </div>
+    </div>
+    <!-- main content -->
+    <main>
+        <!-- blurb -->
+        <section class="blurb" id="commercial-blurb">
+            <h1>Commercial Photography</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam delectus eveniet incidunt vero inventore nisi odit maiores, officia cumque eaque! Aliquid aut sapiente voluptatum sequi tempore? Quia, eaque adipisci?</p>
+        </section>
+
+        <section class="images" id="commercial-images">
+            <img src="images/Commercial small/_A744261.jpg" alt="A man smells a small glass of whisky">
+            <img src="images/Commercial small/DJI_0254.jpg" alt="An aerial shot of a distillery nestled in the countryside">
+            <img src="images/Commercial small/DSC00349-Enhanced-NR.jpg" alt="A woman holds up a small glass of whisky to the camera">
+            <img src="images/Commercial small/DSC00429.jpg" alt="A man and a woman hold up small glasses of whisky to their noses. They are surrounded by a number of wooden casks">
+            <img src="images/Commercial small/DSC00507-Enhanced-NR.jpg" alt="A small glass of whisky. The glass has letters on it reading 'anCnoc'">
+            <img src="images/Commercial small/DSC04340.jpg" alt="A man in a brown shirt stands in from of a number of wooden casks. He is holding a glass of whisky">
+            <img src="images/Commercial small/DSC04397.jpg" alt="A man stands on the edge of a cliff looking down at the clouds">
+            <img src="images/Commercial small/DSC04485.jpg" alt="Rows of wooden whisky casks">
+            <img src="images/Commercial small/DSC04514.jpg" alt="The back of a man's head as he looks out at a mountain range at sunrise. The picture is taken from inside a tent">
+            <img src="images/Commercial small/DSC04999-2.jpg" alt="A Tissot watch sits among some shiny black stones">
+            <img src="images/Commercial small/DSC05140-2.jpg" alt="A man taking a photograph with a silver watch on his wrist">
+            <img src="images/Commercial small/DSC06418.jpg" alt="A black and white photo of a man standing with his back to a stack of whisky casks">
+            <img src="images/Commercial small/DSC07316-5.jpg" alt="Two hands holding a watch with a black and brown strap">
+            <img src="images/Commercial small/DSC07733-Enhanced-NR.jpg" alt="A man in a blue jacket riding a mountain bike through a forest">
+            <img src="images/Commercial small/DSC07900.jpg" alt="A man in a red sweater and black baseball cap looks at a watch with a blue strap that he is holding">
+            <img src="images/Commercial small/DSC09185-2.jpg" alt="A boutique hotel room">
+            <img src="images/Commercial small/DSC09296.jpg" alt="Three large silver whisky stills in a distillery">
+            <img src="images/Commercial small/DSC09328.jpg" alt="A bottle of Terre merlot wine against a background of wooden barrels">
+            <img src="images/Commercial small/L1001069.jpg" alt="A watch with a red handle. The watch face shows the clockwork mechanism inside">
+            <img src="images/Commercial small/ld-export-891f077f-02252023.jpg" alt="A person in a red jacket takes a tripod photograph of a mountain in the snow">
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <!-- social icons -->
+        <div class="socials">
+            <a href="https://www.instagram.com/thejacobmurray/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jacob-murray-b3a52626a/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <!-- credit blurb -->
+        <div class="credits">
+            <p>© Jacob Murray 2026. <br>Site by <a href="https://github.com/freyamurray">Freya Murray</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

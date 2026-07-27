@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Murray | Travel Photography</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/7ce2089e78.js" crossorigin="anonymous"></script>
+    <link type="image/png" sizes="16x16" rel="icon" href="icons/icons8-slr-camera-16.png">
+
+</head>
+
+<body>
+
+    <!-- banner -->
+    <header>
+        <div class="name">
+            <a href="index.html">
+                <h1>Jacob Murray</h1>
+                <p class="tagline">photography</p>
+            </a>
+        </div>
+
+        <!-- desktop navigation bar -->
+        <nav id="desktop-nav">
+            <a href="index.html#about">
+                About
+            </a> |
+            <div>
+                <button type="button" popovertarget="portfolio-dropdown" id="portfolio">
+                    Portfolio
+                </button>
+                <div role="menu-item" popover id="portfolio-dropdown">
+                    <a href="automotive.html">
+                        Automotive
+                    </a>
+                    <br>
+                    <a href="traveltourism.html">
+                        Travel
+                    </a>
+                    <br>
+                    <a href="commercial.html">
+                        Commercial
+                    </a>
+                    <br>
+                    <a href="weddings.html">
+                        Weddings
+                    </a>
+                </div>
+            </div> |
+            <a href="contact.html">
+                Contact
+            </a> |
+            <!-- banner dark mode -->
+            <button type="button" class="themeswitch" id="desktop-themeswitch" onclick="themeSwitch()">
+                <i class='fa-solid fa-moon' title="dark mode"></i>
+            </button>
+        </nav>
+
+        <!-- hamburger menu -->
+        <button type="button" id="hb-menu" onclick="mobileMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- mobile themeswitch button -->
+    <button type="button" class="themeSwitch" id="mobile-themeswitch" onclick="themeSwitch()">
+        <i class='fa-solid fa-moon' title="dark mode"></i>
+    </button>
+
+    <!-- mobile menu -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-content">
+
+
+            <a href="#about">
+                About
+            </a>
+            <div>
+                <button id="portfolio-mobile" onclick="dropdown()">
+                    Portfolio
+                </button>
+                <div class="dropdown" id="portfolio-dropdown-mobile">
+                    <a href="automotive.html">
+                        Automotive
+                    </a>
+                    <br>
+                    <a href="traveltourism.html">
+                        Travel
+                    </a>
+                    <br>
+                    <a href="commercial.html">
+                        Commercial
+                    </a>
+                    <br>
+                    <a href="weddings.html">
+                        Weddings
+                    </a>
+                </div>
+            </div>
+            <a href="contact.html">
+                Contact
+            </a>
+        </div>
+    </div>
+    <!-- main content -->
+    <main>
+        <!-- blurb -->
+        <section class="blurb" id="travel-blurb">
+            <h1>Travel and Tourism</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam delectus eveniet incidunt vero
+                inventore nisi odit maiores, officia cumque eaque! Aliquid aut sapiente voluptatum sequi tempore? Quia,
+                eaque adipisci?</p>
+        </section>
+
+        <section class="images" id="travel-images">
+            <img src="images/Travel small/5W5A3492-2.jpg" alt="A man standing waist deep in the ocean at sunset">
+            <img src="images/Travel small/DJI_0103.jpg" alt="Mont St Michel at dusk">
+            <img src="images/Travel small/DJI_0414.jpg" alt="A snowy mountain range">
+            <img src="images/Travel small/DJI_0675-Edit-2.jpg"
+                alt="A small lit-up cabin in a snowy woodland under the Aurora Borealis">
+            <img src="images/Travel small/DJI_20240614221459_0042_D-2.jpg" alt="A river between two cliffs in fog">
+            <img src="images/Travel small/DJI_20240616010745_0048_D.jpg" alt="Magma from above">
+            <img src="images/Travel small/DJI_20250603125546_0023_D-Enhanced-NR.jpg"
+                alt="Ocean waves in a rain storm at sunset">
+            <img src="images/Travel small/DSC00155-Enhanced-NR-Edit.jpg" alt="A snowy mountain range">
+            <img src="images/Travel small/DSC01679-2.jpg"
+                alt="Three pointed rocks with a small figure standing next to them">
+            <img src="images/Travel small/DSC02675-4.jpg" alt="A small cabin buried in snow in a snowy forest">
+            <img src="images/Travel small/DSC02745-Enhanced-NR.jpg" alt="A figure standing in a snowy forest">
+            <img src="images/Travel small/DSC02887.jpg" alt="Cliffs overlooking the ocean">
+            <img src="images/Travel small/DSC04979-2.jpg"
+                alt="A person standing on a steep slope, with crags in the background">
+            <img src="images/Travel small/DSC05322.jpg" alt="A man in a black jacket with lense flares">
+            <img src="images/Travel small/DSC05391-Edit-Edit.jpg"
+                alt="A small church in front of a rocky mountain range under the stars">
+            <img src="images/Commercial small/DSC03437-2.jpg" alt="Two people walk through a snowy forest.">
+            <img src="images/Travel small/DSC05912-Enhanced-NR.jpg"
+                alt="A figure looking up at the Aurora Borealis, with a distant city in the background">
+            <img src="images/Travel small/DSC06154.jpg"
+                alt="Two people sit around a campfire in a snowy forest at night">
+            <img src="images/Travel small/DSC06163.jpg" alt="Three people in mountaineering gear walk across a glacier">
+            <img src="images/Travel small/DSC06580.jpg"
+                alt="A view of the ocean through the window of a small aeroplane">
+            <img src="images/Travel small/DSC06715.jpg" alt="The Aurora Borealis above a mountain">
+            <img src="images/Travel small/DSC09753.jpg"
+                alt="Two people look out of a window over a rocky mountain range">
+            <img src="images/Travel small/Untitled_2.3.1.jpg" alt="Three people walk down a steep, snowy slope at dusk">
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <!-- social icons -->
+        <div class="socials">
+            <a href="https://www.instagram.com/thejacobmurray/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jacob-murray-b3a52626a/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <!-- credit blurb -->
+        <div class="credits">
+            <p>© Jacob Murray 2026. <br>Site by <a href="https://github.com/freyamurray">Freya Murray</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
