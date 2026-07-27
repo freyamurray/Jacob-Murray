@@ -417,8 +417,8 @@ textarea {
 
   #hb-menu {
     display: block;
-    position: absolute;
-    right: 0;
+    /* position: absolute; */
+    /* right: 0; */
   }
 
   #mobile-themeswitch {
