@@ -417,7 +417,7 @@ textarea {
 
   #hb-menu {
     display: block;
-    position: fixed;
+    position: absolute;
     right: 0;
   }
 
@@ -446,11 +446,5 @@ textarea {
 
   .images {
     columns: 1;
-  }
-}
-
-@media (min-width = 851px) and (max-width = 1000px) {
-  .images {
-    columns: 2;
   }
 }
