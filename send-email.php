@@ -31,8 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") { // validate form method
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
-    $mail->Username = 'freyaclmurray@gmail.com';
-    $mail->Password = 'qslg kmzl btar cbeb';
+    $mail->Username = 'placeholder';
+    $mail->Password = 'placeholder';
 
     // email details 
     $mail->setFrom($email, $name); // the person who filled in the form
