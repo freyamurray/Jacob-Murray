@@ -70,6 +70,10 @@ body {
   transition-duration: .3s;
 }
 
+main {
+  padding-top: 7rem;
+}
+
 /* HEADER */
 header {
   transition-duration: .3s;
