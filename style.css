@@ -342,15 +342,17 @@ footer {
 /* || CONTACT */
 form  {
   height: 100%;
-  padding: 2rem;
   max-width: 40rem;
   margin: auto;
   font-family: aptos;
+  border: solid;
+  margin: auto;
+  padding: 2rem;
 }
 
 
 input, textarea {
-  margin: 1rem;
+margin-bottom: 1rem;
   width: 100%;
   font-family: aptos;
   padding: .7rem;
