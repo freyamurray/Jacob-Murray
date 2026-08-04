@@ -2,7 +2,7 @@
 
 /* light mode colours */
 :root {
-  --bg: #EAE8E1;
+  --bg: #eae8e1;
   --text: black;
   --input: rgba(255, 255, 255, 0.776);
 }
@@ -10,7 +10,7 @@
 /* dark mode colours */
 .dark {
   --bg: rgb(13, 13, 13);
-  --text: #EAE8E1;
+  --text: #eae8e1;
   --input: rgba(0, 0, 0, 0.819);
 }
 
@@ -67,7 +67,7 @@ body {
   box-sizing: border-box;
   background-color: var(--bg);
   color: var(--text);
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 main {
@@ -76,7 +76,7 @@ main {
 
 /* HEADER */
 header {
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
@@ -194,7 +194,7 @@ button {
   padding: 1rem;
   background-color: var(--bg);
   z-index: 5;
-  
+
   a {
     line-height: 2rem;
     text-decoration: none;
@@ -257,10 +257,11 @@ footer {
 #hero-image {
   height: 38rem;
   background-size: cover;
+  border-radius: 3px;
 }
 
 .hero-text {
-  color: #EAE8E1;
+  color: #eae8e1;
   font-size: 3rem;
   font-style: italic;
   font-family: aptos-serif;
@@ -274,7 +275,7 @@ footer {
 .instructions {
   align-items: baseline;
   mix-blend-mode: screen;
-  color: #EAE8E1;
+  color: #eae8e1;
   margin-top: -3rem;
   text-align: end;
   margin-right: 1rem;
@@ -313,7 +314,7 @@ footer {
 
 /* || PORTFOLIO PAGES */
 .blurb {
-  margin:0rem 3rem;
+  margin: 0rem 3rem;
   margin-bottom: -2rem;
 
   h1 {
@@ -329,39 +330,54 @@ footer {
   padding: 3rem;
   display: column;
   columns: 3;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
 
   img {
     width: 100%;
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
     border-radius: 3px;
   }
 }
 
 /* || CONTACT */
-form  {
-  height: 100%;
-  max-width: 30rem;
+
+.contact-blurb {
+  max-width: 45rem;
   margin: auto;
-  font-family: aptos;
-  margin: auto;
-  padding: 4rem 2rem;
+  color: rgb(37, 36, 36);
+  text-align: justify;
+  padding: 1rem;
+  padding-bottom: 0;
+
+  h1 {
+    text-align: end;
+  }
 }
 
+form {
+  height: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+  font-family: aptos;
+  padding: 0 1rem;
+}
 
-input, textarea {
-margin-bottom: 1rem;
+input,
+textarea {
+  margin-bottom: 1rem;
   width: 100%;
   font-family: aptos;
-  padding: .7rem;
+  padding: 0.7rem;
   border-radius: 1rem;
   border: none;
   color: var(--text);
-  background-color: var(--input);
+  background-color: var(--bg);
   font-size: 1.1rem;
+  border: dotted 1px;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: var(--text);
 }
 
@@ -395,7 +411,6 @@ textarea {
   h1 {
     text-align: center;
   }
-
 }
 
 /* UNDER CONSTRUCTION */
@@ -460,6 +475,6 @@ textarea {
   }
 
   .images {
-  padding: 1rem;
-}
+    padding: 1rem;
+  }
 }
