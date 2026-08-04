@@ -458,4 +458,8 @@ textarea {
   .images {
     columns: 1;
   }
+
+  .images {
+  padding: 1rem;
+}
 }
