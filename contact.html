@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contact me if your brand requires professional photos for a website, advertising or social media campaign. Please reach out if you would like to work together!">
+    <meta name="description"
+        content="Contact me if your brand requires professional photos for a website, advertising or social media campaign. Please reach out if you would like to work together!">
+    <meta property="og:title" content="Jacob Murray | Contact">
+    <meta property="og:description"
+        content="Contact me if your brand requires professional photos for a website, advertising or social media campaign. Please reach out if you would like to work together!">
+    <meta property="og:type" content="website">
+    <meta name="keywords"
+        content="Photography, automotive, travel, luxury, videography, automotive, cars, Jacob Murray, contact">
     <title>Jacob Murray | Contact</title>
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
@@ -112,30 +119,38 @@
     <main>
         <!-- hero image -->
         <section class="hero">
-            <div id="hero-image" style="min-height: fit-content; background-color: #eae8e193; background-blend-mode: lighten;">
+            <div id="hero-image"
+                style="min-height: fit-content; background-color: #eae8e193; background-blend-mode: lighten;">
                 <div class="contact-blurb">
                     <h1>Contact</h1>
-                    <p>Contact me if your brand requires professional photos for a website, advertising or social media campaign. Photography and videography services are available, digital or analogue. All editing and retouching included. Please reach out if you would like to work together!</p>
+                    <p>Contact me if your brand requires professional photos for a website, advertising or social media
+                        campaign. Photography and videography services are available, digital or analogue. All editing
+                        and retouching included. Please reach out if you would like to work together!</p>
                 </div>
                 <form action="send-email.php" method="post">
                     <div class="input" id="name-input">
-                        <input type="text" name="name" id="name" aria-label="Name" placeholder="Name *" required autocomplete="name">
+                        <input type="text" name="name" id="name" aria-label="Name" placeholder="Name *" required
+                            autocomplete="name">
                     </div>
 
                     <div class="input" id="email-input">
-                        <input type="email" name="email" id="email" aria-label="email" placeholder="Email *" required autocomplete="email">
+                        <input type="email" name="email" id="email" aria-label="email" placeholder="Email *" required
+                            autocomplete="email">
                     </div>
 
                     <div class="input" id="phone-input">
-                        <input type="tel" name="number" id="number" aria-label="phone number" placeholder="Phone number" autocomplete="mobile">
+                        <input type="tel" name="number" id="number" aria-label="phone number" placeholder="Phone number"
+                            autocomplete="mobile">
                     </div>
 
                     <div class="input" id="subject-input">
-                        <input type="text" name="subject" id="subject" aria-label="subject" placeholder="Subject *" required>
+                        <input type="text" name="subject" id="subject" aria-label="subject" placeholder="Subject *"
+                            required>
                     </div>
 
                     <div class="input" id="message-input">
-                        <textarea name="message" id="message" aria-label="message" placeholder="Message *" required></textarea>
+                        <textarea name="message" id="message" aria-label="message" placeholder="Message *"
+                            required></textarea>
                     </div>
 
                     <input class="submit-button" role="button" type="submit" value="Send Message">

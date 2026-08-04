@@ -281,6 +281,20 @@ footer {
   margin-right: 1rem;
 }
 
+.contact-button {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: aptos;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  mix-blend-mode: unset;
+
+  a {
+    text-decoration: none;
+  }
+}
+
 /* about section */
 
 .about-content {
