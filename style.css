@@ -2,7 +2,7 @@
 
 /* light mode colours */
 :root {
-  --bg: white;
+  --bg: #EAE8E1;
   --text: black;
   --input: rgba(255, 255, 255, 0.776);
 }
@@ -10,7 +10,7 @@
 /* dark mode colours */
 .dark {
   --bg: rgb(13, 13, 13);
-  --text: white;
+  --text: #EAE8E1;
   --input: rgba(0, 0, 0, 0.819);
 }
 
@@ -110,6 +110,7 @@ button {
 
 .name {
   padding: 0 1rem;
+  text-wrap: nowrap;
 }
 
 .tagline {
@@ -172,13 +173,6 @@ button {
   margin: 1rem;
 }
 
-/* #desktop-themeswitch {
-  position: fixed;
-  right: 0;
-  margin: 1rem;
-  font-size: 1.3rem;
-} */
-
 #mobile-themeswitch {
   display: none;
 }
@@ -200,9 +194,11 @@ button {
   padding: 1rem;
   background-color: var(--bg);
   z-index: 5;
+  
   a {
     line-height: 2rem;
     text-decoration: none;
+    font-size: 1.2rem;
   }
 }
 
@@ -215,8 +211,9 @@ button {
 }
 
 #portfolio-mobile {
-  font-size: 1rem;
-  margin-left: -7px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 0;
 }
 
 #portfolio-dropdown-mobile {
@@ -226,7 +223,7 @@ button {
   border-left: dotted 2px;
   color: var(--text);
   a {
-    line-height: 1.5rem;
+    line-height: 2rem;
   }
 
   button {
@@ -263,7 +260,7 @@ footer {
 }
 
 .hero-text {
-  color: white;
+  color: #EAE8E1;
   font-size: 3rem;
   font-style: italic;
   font-family: aptos-serif;
@@ -277,7 +274,7 @@ footer {
 .instructions {
   align-items: baseline;
   mix-blend-mode: screen;
-  color: white;
+  color: #EAE8E1;
   margin-top: -3rem;
   text-align: end;
   margin-right: 1rem;
@@ -296,13 +293,16 @@ footer {
   border-radius: 50%;
   margin: 1rem;
   width: 90%;
+  align-self: center;
 }
 
 .about-text {
   padding: 1rem;
+  align-self: center;
 
   h2 {
     font-size: 3rem;
+    margin-bottom: 0;
   }
 
   p {
@@ -311,12 +311,10 @@ footer {
   }
 }
 
-/* || PORFOLIO PAGES */
+/* || PORTFOLIO PAGES */
 .blurb {
-  /* border: solid; */
-  padding: 2rem;
-  max-width: 50rem;
-  margin: auto;
+  margin:0rem 3rem;
+  margin-bottom: -2rem;
 
   h1 {
     text-align: end;
@@ -336,6 +334,7 @@ footer {
   img {
     width: 100%;
     margin-bottom: .3rem;
+    border-radius: 3px;
   }
 }
 
