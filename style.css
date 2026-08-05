@@ -173,6 +173,12 @@ button {
   margin: 1rem;
 }
 
+#desktop-themeswitch {
+  i {
+    min-width: 1.5rem;
+  }
+}
+
 #mobile-themeswitch {
   display: none;
 }
