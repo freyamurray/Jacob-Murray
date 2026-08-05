@@ -19,7 +19,7 @@
     <link type="image/png" sizes="16x16" rel="icon" href="icons/icons8-slr-camera-16.png">
 </head>
 
-<body onload="randomImage()">
+<body onload="randomImage(), detectColorScheme();">
     <!-- banner -->
     <header>
         <div class="name">
@@ -61,7 +61,6 @@
             </a> |
             <!-- banner dark mode -->
             <button type="button" class="themeswitch" id="desktop-themeswitch" onclick="themeSwitch()" aria-label="switch theme">
-                <i class='fa-solid fa-moon' title="dark mode"></i>
             </button>
         </nav>
 
@@ -73,7 +72,6 @@
 
     <!-- mobile themeswitch button -->
     <button type="button" class="themeSwitch" id="mobile-themeswitch" onclick="themeSwitch()" aria-label="switch theme">
-        <i class='fa-solid fa-moon' title="dark mode"></i>
     </button>
 
     <!-- mobile menu -->

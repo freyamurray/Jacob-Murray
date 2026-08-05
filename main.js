@@ -5,7 +5,13 @@ function themeSwitch() {
   btnMb = document.getElementById("mobile-themeswitch");
 
   document.body.classList.toggle("dark");
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
 
+  // desktop button
   if (document.body.classList.contains("dark")) {
     btnDt.innerHTML = "<i class='fa-solid fa-sun' title='light mode'></i>";
     btnDt.ariaLabel = "light mode";
@@ -14,6 +20,59 @@ function themeSwitch() {
     btnDt.ariaLabel = "dark mode";
   }
 
+  // mobile button
+  if (document.body.classList.contains("dark")) {
+    btnMb.innerHTML = "<i class='fa-solid fa-sun' title='light mode'></i>";
+    btnMb.ariaLabel = "light mode";
+  } else {
+    btnMb.innerHTML = "<i class='fa-solid fa-moon' title='dark mode'></i>";
+    btnMb.ariaLabel = "dark mode";
+  }
+}
+
+// helper functions to toggle dark mode
+function enableDarkMode() {
+  document.body.classList.add("dark");
+  localStorage.setItem("theme", "dark");
+}
+function disableDarkMode() {
+  document.body.classList.remove("dark");
+  localStorage.setItem("theme", "light");
+}
+
+// determines a new users dark mode preferences
+function detectColorScheme() {
+  let btnDt, btnMb;
+  btnDt = document.getElementById("desktop-themeswitch");
+  btnMb = document.getElementById("mobile-themeswitch");
+  // default to the light theme
+  let theme = "light";
+
+  // check localStorage for a saved 'theme' variable. if it's there, the user has visited before, so apply the necessary theme choices
+  if (localStorage.getItem("theme")) {
+    theme = localStorage.getItem("theme");
+  }
+  // if it's not there, check to see if the user has applied dark mode preferences themselves in the browser
+  else if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    theme = "dark";
+  }
+
+  // if there is no preference set, the default of light will be used. apply accordingly
+  theme === "dark" ? enableDarkMode() : disableDarkMode();
+
+  // desktop button
+  if (document.body.classList.contains("dark")) {
+    btnDt.innerHTML = "<i class='fa-solid fa-sun' title='light mode'></i>";
+    btnDt.ariaLabel = "light mode";
+  } else {
+    btnDt.innerHTML = "<i class='fa-solid fa-moon' title='dark mode'></i>";
+    btnDt.ariaLabel = "dark mode";
+  }
+
+  // mobile button
   if (document.body.classList.contains("dark")) {
     btnMb.innerHTML = "<i class='fa-solid fa-sun' title='light mode'></i>";
     btnMb.ariaLabel = "light mode";
