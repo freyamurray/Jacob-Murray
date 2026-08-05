@@ -31,13 +31,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") { // validate form method
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
-    $mail->Username = 'placeholder';
-    $mail->Password = 'placeholder';
+    $mail->Username = 'PLACEHOLDER';
+    $mail->Password = 'PLACEHOLDER';
 
     // email details 
     $mail->setFrom($email, $name); // the person who filled in the form
     $mail->addReplyTo($email, $name); // as above
-    $mail->addAddress("freyaclmurray@gmail.com", "Freya Murray"); // where the email should get sent to
+    $mail->addAddress("PLACEHOLDER", "PLACEHOLDER"); // where the email should get sent to
     $mail->Subject = $subject;
     $mail->Body = $message;
 
