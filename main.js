@@ -1,17 +1,11 @@
-// themeswitch button
-function themeSwitch() {
+
+// check theme to determine button content 
+function checkTheme() {
   let btnDt, btnMb;
   btnDt = document.getElementById("desktop-themeswitch");
   btnMb = document.getElementById("mobile-themeswitch");
 
-  document.body.classList.toggle("dark");
-  if (document.body.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
-  } else {
-    localStorage.setItem("theme", "light");
-  }
-
-  // desktop button
+    // desktop button
   if (document.body.classList.contains("dark")) {
     btnDt.innerHTML = "<i class='fa-solid fa-sun' title='light mode'></i>";
     btnDt.ariaLabel = "light mode";
@@ -30,6 +24,19 @@ function themeSwitch() {
   }
 }
 
+// themeswitch button
+function themeSwitch() {
+  document.body.classList.toggle("dark");
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  };
+
+  checkTheme()
+}
+
+
 // helper functions to toggle dark mode
 function enableDarkMode() {
   document.body.classList.add("dark");
@@ -42,9 +49,6 @@ function disableDarkMode() {
 
 // determines a new users dark mode preferences
 function detectColorScheme() {
-  let btnDt, btnMb;
-  btnDt = document.getElementById("desktop-themeswitch");
-  btnMb = document.getElementById("mobile-themeswitch");
   // default to the light theme
   let theme = "light";
 
@@ -63,23 +67,7 @@ function detectColorScheme() {
   // if there is no preference set, the default of light will be used. apply accordingly
   theme === "dark" ? enableDarkMode() : disableDarkMode();
 
-  // desktop button
-  if (document.body.classList.contains("dark")) {
-    btnDt.innerHTML = "<i class='fa-solid fa-sun' title='light mode'></i>";
-    btnDt.ariaLabel = "light mode";
-  } else {
-    btnDt.innerHTML = "<i class='fa-solid fa-moon' title='dark mode'></i>";
-    btnDt.ariaLabel = "dark mode";
-  }
-
-  // mobile button
-  if (document.body.classList.contains("dark")) {
-    btnMb.innerHTML = "<i class='fa-solid fa-sun' title='light mode'></i>";
-    btnMb.ariaLabel = "light mode";
-  } else {
-    btnMb.innerHTML = "<i class='fa-solid fa-moon' title='dark mode'></i>";
-    btnMb.ariaLabel = "dark mode";
-  }
+  checkTheme();
 }
 
 // mobile menu
@@ -115,7 +103,6 @@ function dropdown() {
 }
 
 // home page hero image randomiser
-
 const heroImages = [
   "url('images/home-images/snowy-trees.jpg')",
   "url('images/home-images/northern-lights-2.jpg')",
