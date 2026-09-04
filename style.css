@@ -143,27 +143,25 @@ button {
 }
 
 #portfolio-dropdown {
-  position: absolute;
+  position: fixed;
   border: none;
   border-left: 1px solid;
   background-color: var(--bg);
   border-radius: 0px 0px 3px 3px;
+  /* background: linear-gradient(var(--bg), transparent); */
+  inset: auto;
+  top: anchor(bottom);
+  left: anchor(left);
   width: 13rem;
+  /*overflow: hidden; */
   box-sizing: border-box;
-  top: 100%;
-  left: 0;
-  transform: translateY(6px);
+  margin-top: -5px;
+  margin-left: -18.6px;
   padding-bottom: 1rem;
   padding-top: 1rem;
   padding-left: 1rem;
   color: var(--text);
-  z-index: 20;
 
-
-/* ensure the dropdown is positioned relative to its wrapper */
-#desktop-nav > div {
-  position: relative;
-}
   a {
     line-height: 2rem;
     font-size: 1rem;
