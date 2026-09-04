@@ -394,7 +394,6 @@ textarea {
   color: var(--text);
   background-color: var(--bg);
   font-size: 1.1rem;
-  border: dotted 1px;
 }
 
 input::placeholder,
