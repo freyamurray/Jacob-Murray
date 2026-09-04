@@ -139,28 +139,28 @@ button {
 #portfolio {
   cursor: pointer;
   padding: 0;
+  z-index: 20;
   /* font-size: 1rem; */
 }
 
 #portfolio-dropdown {
-  position: fixed;
+  position-area: top;
   border: none;
-  border-left: 1px solid;
   background-color: var(--bg);
   border-radius: 0px 0px 3px 3px;
-  /* background: linear-gradient(var(--bg), transparent); */
   inset: auto;
   top: anchor(bottom);
   left: anchor(left);
   width: 13rem;
-  /*overflow: hidden; */
+  overflow: hidden; 
   box-sizing: border-box;
   margin-top: -5px;
+  z-index: 1;
   margin-left: -18.6px;
   padding-bottom: 1rem;
-  padding-top: 1rem;
+  margin-top: 1rem;
   padding-left: 1rem;
-  color: var(--text);
+  color: var(--text); 
 
   a {
     line-height: 2rem;
@@ -193,7 +193,7 @@ button {
   width: 100%;
   inset: auto;
   top: 0;
-  margin-top: 8.5rem;
+  margin-top: 8rem;
   box-sizing: border-box;
   border-top: solid 1px;
   border-bottom: dotted 2px;
@@ -209,11 +209,12 @@ button {
 }
 
 .mobile-nav-content {
-  width: 1rem;
+  width: 6rem;
   text-align: start;
   margin: auto;
   padding: 0rem 1rem;
   border-left: dotted 2px;
+
 }
 
 #portfolio-mobile {
