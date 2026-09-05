@@ -13,4 +13,4 @@ Allow: /includes/
 User-agent: MSNBot-Media
 Allow: /includes/
 
-Sitemap: https://jacobmurray.co.uk/sitemap.txt 
+Sitemap: https://jacobmurray.co.uk/sitemap.xml 
