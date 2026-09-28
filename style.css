@@ -301,6 +301,14 @@ footer {
   a {
     text-decoration: none;
   }
+
+  &&:hover {
+    scale: 105%;
+  }
+
+  &&:active {
+    scale: 100%;
+  }
 }
 
 /* about section */
