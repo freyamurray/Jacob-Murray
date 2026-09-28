@@ -109,7 +109,6 @@ const heroImages = [
   "url('images/home-images/rain-waves.jpg')",
   "url('images/home-images/big-rocks.jpg')",
   "url('images/home-images/northern-lights-3.jpg')",
-  "url('images/home-images/starry-mountains.jpg')",
   "url('images/home-images/man-clouds.jpg')",
   "url('images/home-images/man-tent.jpg')",
   "url('images/home-images/land-rover.jpg')",
