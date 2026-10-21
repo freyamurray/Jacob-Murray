@@ -12,6 +12,13 @@
   --bg: rgb(13, 13, 13);
   --text: #eae8e1;
   --input: rgba(0, 0, 0, 0.819);
+
+  .brands-carousel {
+    img {
+       filter: invert();
+    }
+  }
+
 }
 
 /* fonts */
@@ -340,6 +347,43 @@ footer {
     font-style: italic;
     text-align: justify;
   }
+}
+
+.brands-carousel {
+margin: 2rem 0;
+--gap: 1rem;
+display: flex;
+width: 100%;
+overflow: hidden;
+gap: var(--gap);
+}
+
+.logos {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  height: 10rem;
+
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* Enable animation */
+.logos {
+  animation: scroll 15s linear infinite;
+}
+
+/* Pause on hover */
+.brands-carousel:hover .logos{
+  animation-play-state: paused;
 }
 
 /* || PORTFOLIO PAGES */
