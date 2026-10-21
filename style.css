@@ -352,7 +352,9 @@ footer {
 .brands-carousel {
   margin: 2rem 0;
   --gap: 4rem;
+  padding: var(--gap);
   display: flex;
+  gap: var(--gap);
   width: 100%;
   overflow: hidden;
 }
@@ -364,7 +366,6 @@ footer {
   gap: var(--gap);
   width: max-content;
   height: 10rem;
-  padding-right: var(--gap);
   animation: scroll 15s linear infinite;
 }
 
