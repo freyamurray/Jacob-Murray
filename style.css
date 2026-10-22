@@ -354,11 +354,12 @@ footer {
     max-width: 60rem;
     padding: 0 1rem;
     margin: auto;
+    margin-bottom: -1rem;
+    margin-top: 1rem;
   }
 }
 
 .brands-carousel {
-  margin: 1rem 0;
   --gap: 4rem;
   padding: none var(--gap);
   display: flex;
@@ -387,6 +388,7 @@ footer {
 
 .logos img {
   width: 10rem;
+  scale: .7;
 }
 
 @keyframes scroll {
