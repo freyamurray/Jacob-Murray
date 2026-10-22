@@ -66,7 +66,7 @@ button:focus-visible {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 8rem;
+  scroll-padding-top: 7rem;
 }
 
 body {
@@ -346,6 +346,14 @@ footer {
   p {
     font-style: italic;
     text-align: justify;
+  }
+}
+
+.clients {
+  h2 {
+    max-width: 60rem;
+    padding: 0 1rem;
+    margin: auto;
   }
 }
 
